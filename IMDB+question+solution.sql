@@ -22,29 +22,34 @@ FROM
     director_mapping;
 
 SELECT 
+    COUNT(*) AS `director_mapping_count`
+FROM
+    `director_mapping`;
+
+SELECT 
     COUNT(*) AS `genre_count`
 FROM
-    genre;
+    `genre`;
 
 SELECT 
     COUNT(*) AS `movie_count`
 FROM
-    movie;
+    `movie`;
 
 SELECT 
     COUNT(*) AS `names_count`
 FROM
-    names;
+    `names`;
 
 SELECT 
     COUNT(*) AS `ratings_count`
 FROM
-    ratings;
+    `ratings`;
 
 SELECT 
     COUNT(*) AS `role_mapping_count`
 FROM
-    role_mapping;
+    `role_mapping`;
     
 /* 
 -- total no. of rows in `role_mapping_count` = 15615
